@@ -1,0 +1,40 @@
+.nav-link:hover {
+    color: rgb(28, 183, 131);
+}
+.main-background {
+    background-color: rgb(28, 183, 131);
+    border-top: 3px solid rgb(95, 95, 246);
+}
+.main-right-box {
+    border: 5px solid white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(images/CalebPic.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.main-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(95, 95, 246);
+    border: 3px solid rgb(28, 183, 131);
+    border-radius: 20%;
+    padding: 10px;
+    transition: 0.3s;
+}
+.main-link:hover {
+    background-color: white;
+    color: rgb(28, 183, 131);
+}
+.cards-section {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.card-text {
+    font-size: 12px;
+}
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
