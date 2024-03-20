@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+  <style>
+
+    .nav-link:hover {
+        color: rgb(28, 183, 131);
+    }
+    .main-background {
+        background-color: rgb(28, 183, 131);
+        border-top: 3px solid rgb(95, 95, 246);
+    }
+    .main-right-box {
+        border: 5px solid white;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-image: url(images/CalebPic.jpg);
+        background-size: contain;
+        background-position: center;
+    }
+    .main-link {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(95, 95, 246);
+        border: 3px solid rgb(28, 183, 131);
+        border-radius: 20%;
+        padding: 10px;
+        transition: 0.3s;
+    }
+    .main-link:hover {
+        background-color: white;
+        color: rgb(28, 183, 131);
+    }
+    .cards-section {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .card:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+  </style>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/smallRocket.avif" alt="Logo" width="30" height="24">
+            <strong>Course Hub</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- Home Link -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- Features Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://georgiasouthern.desire2learn.com/d2l/login" target="_blank">Folio</a>
+              </li>
+              <!-- Pricing Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://cas.georgiasouthern.edu/cas/login?service=https%3A%2F%2Fmy.georgiasouthern.edu%2Fportal%2Fportal.php&renew=true" target="_blank">myGS</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Udemy</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-background">
+        <div class="container py-4">
+          <div class="row">
+              <div class="col text-white text-center">
+                <div class="position-relative top-50 start-50 translate-middle">
+                  <h1>Welcome to my Course Hub!</h1>
+                  <p>Built with the help of Bootstrap to help with all my academic needs.</p>
+                </div>  
+              </div>
+              <div class="col">
+                  <div class="main-right-box position-relative top-50 start-50 translate-middle"></div>               
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white py-4 shadow-lg">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                  <a href="" class="main-link">Books</a>
+                </div>
+                <div class="col">
+                  <a href="" class="main-link">Grades</a>
+                </div>
+                <div class="col">
+                  <a href="" class="main-link">Schedule</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="cards-section">
+        <div class="container">
+            <div class="row">
+                <h1>My Classes</h1>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <!-- card 1 -->
+                  <div class="card h-100">
+                    <img src="images/machine_learning.jpg" class="card-img-top h-50" alt="Machine Learning">
+                    <div class="card-body">
+                      <h5 class="card-title">Machine Learning</h5>
+                      <p class="card-text">Meeting times: Mon | Wed 4:00 - 5:15</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-link">Kai Wang</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- card 2 -->
+                  <div class="card h-100">
+                    <img src="images/data_comm.jpg" class="card-img-top h-50" alt="Data Comm">
+                    <div class="card-body">
+                      <h5 class="card-title">Data Communications and Networking</h5>
+                      <p class="card-text">Meeting times: Mon | Wed 12:20 - 1:35</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-link">Hong Zhang</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- card 3 -->
+                  <div class="card h-100">
+                    <img src="images/computer_architecture.jpeg" class="card-img-top h-50" alt="Computer Architecture">
+                    <div class="card-body">
+                      <h5 class="card-title">Computer Architecture</h5>
+                      <p class="card-text">Meeting times: Tue | Thu 9:30 - 10:45</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-link">Hong Zhang</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- card 4 -->
+                  <div class="card h-100">
+                    <img src="images/web_systems.jpeg" class="card-img-top h-50" alt="Distributed Web Systems">
+                    <div class="card-body">
+                      <h5 class="card-title">Distributed Web Systems</h5>
+                      <p class="card-text">Meeting times: Tue | Thu 11:00 - 12:15</p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-link">John Repko</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+
+      
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
